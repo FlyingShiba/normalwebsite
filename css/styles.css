@@ -55,8 +55,8 @@ header {
 
 /* Clases individuales para cada icono */
 .icon-x {
-    width: 44px; /* Ligeramente más grande para compensar el diseño */
-    height: 44px;
+    width: 48px; /* Ligeramente más grande para compensar el diseño */
+    height: 48px;
 }
 
 .icon-telegram {
