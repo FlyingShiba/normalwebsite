@@ -11,7 +11,7 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: black; /* Fallback color */
+    background-color: black;
 }
 
 header {
@@ -28,12 +28,23 @@ header {
 
 .logo {
     font-family: 'Arial', sans-serif;
-    font-size: 24px;
+    font-size: 16px; /* Reducido de 24px */
     background-color: #400000;
-    padding: 8px 16px;
+    padding: 6px 12px; /* Reducido de 8px 16px */
     border-radius: 4px;
     color: white;
     text-transform: uppercase;
+}
+
+.main-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .social-icons {
@@ -42,10 +53,24 @@ header {
     align-items: center;
 }
 
+/* Clases individuales para cada icono */
+.icon-x {
+    width: 44px; /* Ligeramente más grande para compensar el diseño */
+    height: 44px;
+}
+
+.icon-telegram {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-pump {
+    width: 38px; /* Ligeramente más pequeño para equilibrar */
+    height: 38px;
+}
+
 .social-icons img {
-    width: 40px; /* Tamaño ajustado para los iconos */
-    height: 40px; /* Mantener proporción cuadrada */
-    object-fit: contain; /* Mantener proporción de la imagen */
+    object-fit: contain;
     transition: transform 0.2s;
 }
 
