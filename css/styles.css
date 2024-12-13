@@ -1,60 +1,45 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background-image: url('../assets/background19201080.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+<!DOCTYPE html>
+<html>
+<head>
+<title>Social Icons and Logo</title>
+<style>
+.social-icons {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     align-items: center;
-    padding: 20px;
-    color: white;
-    z-index: 1000;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
 }
 
 .logo {
+    font-family: 'Arial', sans-serif;
     font-size: 24px;
-}
-
-.social-icons {
-    display: flex;
-    gap: 20px;
-}
-
-.social-icons a {
+    background-color: #400000;
+    padding: 8px 16px;
+    border-radius: 4px;
     color: white;
-    text-decoration: none;
+    text-transform: uppercase;
 }
+</style>
+</head>
+<body>
 
-.social-icons i {
-    width: 24px;
-    height: 24px;
-}
+<div class="logo">My Website</div>
 
-main {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+<div class="social-icons">
+  <img src="facebook.png" alt="Facebook">
+  <img src="twitter.png" alt="Twitter">
+  <img src="instagram.png" alt="Instagram">
+</div>
 
-.central-image img {
-    max-width: 800px;
-    max-height: 600px;
-    width: 100%;
-    height: auto;
-}
+</body>
+</html>
+
