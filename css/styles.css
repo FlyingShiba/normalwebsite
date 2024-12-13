@@ -1,22 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Social Icons and Logo</title>
-<style>
-.social-icons {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-image: url('../assets/background19201080.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black; /* Fallback color */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
     align-items: center;
-}
-
-.social-icons img {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.2s;
-}
-
-.social-icons img:hover {
-    transform: scale(1.1);
+    padding: 20px;
+    z-index: 1000;
 }
 
 .logo {
@@ -28,18 +35,48 @@
     color: white;
     text-transform: uppercase;
 }
-</style>
-</head>
-<body>
 
-<div class="logo">My Website</div>
+.social-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
 
-<div class="social-icons">
-  <img src="facebook.png" alt="Facebook">
-  <img src="twitter.png" alt="Twitter">
-  <img src="instagram.png" alt="Instagram">
-</div>
+.social-icons img {
+    width: 40px; /* Tamaño ajustado para los iconos */
+    height: 40px; /* Mantener proporción cuadrada */
+    object-fit: contain; /* Mantener proporción de la imagen */
+    transition: transform 0.2s;
+}
 
-</body>
-</html>
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.central-image {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+
+.central-image img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+}
 
