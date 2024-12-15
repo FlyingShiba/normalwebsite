@@ -29,9 +29,9 @@ header {
 
 .logo {
     font-family: 'Arial', sans-serif;
-    font-size: 14px; /* Reducido de 16px */
+    font-size: 14px;
     background-color: #400000;
-    padding: 4px 8px; /* Reducido de 6px 12px */
+    padding: 4px 8px;
     border-radius: 4px;
     color: white;
     text-transform: uppercase;
@@ -57,22 +57,9 @@ header {
     align-items: center;
 }
 
-.icon-x {
-    width: 44px;
-    height: 44px;
-}
-
-.icon-telegram {
+.icon-x, .icon-telegram, .icon-pump {
     width: 40px;
     height: 40px;
-}
-
-.icon-pump {
-    width: 38px;
-    height: 38px;
-}
-
-.social-icons img {
     object-fit: contain;
     transition: transform 0.2s;
 }
@@ -95,19 +82,24 @@ main {
     padding: 20px;
 }
 
-.central-image {
-    max-width: 600px; /* Reducido de 700px */
+.central-content {
+    max-width: 600px;
     width: 90%;
     height: auto;
-    margin: 100px auto 0; /* Ajustado el margen */
+    margin: 100px auto 0;
 }
 
-.central-image img {
+.central-content img,
+.central-content video {
     width: 100%;
     height: auto;
-    max-height: 450px; /* Reducido de 525px */
+    max-height: 450px;
     object-fit: contain;
     border-radius: 8px;
+}
+
+#centralVideo {
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -119,14 +111,14 @@ main {
     header {
         position: relative;
         flex-direction: column;
-        padding-top: 10px; /* Reducido de 20px */
+        padding-top: 10px;
     }
 
     .main-title {
         position: relative;
         transform: none;
         left: auto;
-        margin: 0 0 20px; /* Changed margin */
+        margin: 0 0 20px;
         font-size: 28px;
         padding: 0 10px;
     }
@@ -141,7 +133,7 @@ main {
         min-height: auto;
     }
 
-    .central-image {
+    .central-content {
         margin: 0 auto;
         width: 100%;
     }
