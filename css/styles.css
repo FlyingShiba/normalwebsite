@@ -38,16 +38,13 @@ header {
 
 .main-title {
     font-family: 'Orbitron', sans-serif;
-    font-size: 42px;
+    font-size: 36px;
     color: white;
     text-align: center;
     text-transform: uppercase;
     position: absolute;
-    width: 100%;
     left: 50%;
     transform: translateX(-50%);
-    top: 40px; /* Ajustado para bajar el título */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .social-icons {
@@ -89,24 +86,23 @@ header {
 main {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 120px; /* Aumentado para dar más espacio al título */
+    padding: 20px;
 }
 
 .central-image {
-    max-width: 700px; /* Reducido de 800px para hacer la imagen más pequeña */
-    width: 90%;
+    max-width: 800px;
+    width: 100%;
     height: auto;
-    margin-top: 40px; /* Añadido margen superior */
 }
 
 .central-image img {
     width: 100%;
     height: auto;
-    max-height: 525px; /* Ajustado proporcionalmente desde 600px */
+    max-height: 600px;
     object-fit: contain;
-    border-radius: 8px; /* Opcional: añade bordes redondeados */
 }
 
 @media (max-width: 768px) {
@@ -120,14 +116,13 @@ main {
     .main-title {
         position: static;
         transform: none;
-        margin: 20px 0;
+        margin-bottom: 20px;
         font-size: 28px;
-        padding: 0 10px;
     }
 
     .social-icons {
         order: 2;
-        margin: 20px 0;
+        margin-bottom: 20px;
     }
 
     main {
@@ -137,7 +132,6 @@ main {
 
     .central-image {
         order: 3;
-        margin-top: 20px;
     }
 
     .logo {
