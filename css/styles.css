@@ -1,147 +1,79 @@
-* {
+body {
+    font-family: 'Orbitron', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background-image: url('../assets/background19201080.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: black;
-    overflow-y: auto;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #000000;
     padding: 20px;
-    z-index: 1000;
+    text-align: center;
 }
 
 .logo {
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-    background-color: #400000;
-    padding: 4px 8px;
-    border-radius: 4px;
-    color: white;
-    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .main-title {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 42px;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 40px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .social-icons {
     display: flex;
+    justify-content: center;
     gap: 20px;
-    align-items: center;
 }
 
 .icon-x, .icon-telegram, .icon-pump {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    transition: transform 0.2s;
-}
-
-.social-icons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-icons img:hover {
-    transform: scale(1.1);
+    width: 30px;
+    height: 30px;
 }
 
 main {
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    min-height: calc(100vh - 200px);
 }
 
 .central-content {
-    max-width: 600px;
-    width: 90%;
-    height: auto;
-    margin: 100px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Ajusta esto según tus necesidades */
+    background-color: #1a1a1a; /* Un color de fondo oscuro para cuando no hay imagen */
+    width: 100%;
+    max-width: 800px; /* Ajusta esto según el tamaño máximo que desees para tu imagen */
 }
 
-.central-content img,
-.central-content video {
-    width: 100%;
+#centralImage {
+    max-width: 100%;
     height: auto;
-    max-height: 450px;
-    object-fit: contain;
-    border-radius: 8px;
+    display: block; /* Esto asegura que la imagen se comporte como un bloque */
 }
 
 #centralVideo {
-    display: none;
+    max-width: 100%;
+    height: auto;
+    display: none; /* El video está oculto por defecto */
 }
 
 @media (max-width: 768px) {
-    body, html {
-        height: auto;
-        min-height: 100vh;
-    }
-
-    header {
-        position: relative;
-        flex-direction: column;
-        padding-top: 10px;
-    }
-
     .main-title {
-        position: relative;
-        transform: none;
-        left: auto;
-        margin: 0 0 20px;
-        font-size: 28px;
-        padding: 0 10px;
+        font-size: 24px;
     }
 
     .social-icons {
-        margin: 20px 0;
+        gap: 10px;
     }
 
-    main {
-        padding: 0 20px;
-        margin-top: 20px;
-        min-height: auto;
-    }
-
-    .central-content {
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .logo {
-        position: relative;
-        order: 3;
-        margin-top: 20px;
+    .icon-x, .icon-telegram, .icon-pump {
+        width: 25px;
+        height: 25px;
     }
 }
 
