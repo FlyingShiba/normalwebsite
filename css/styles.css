@@ -119,14 +119,14 @@ main {
     header {
         position: relative;
         flex-direction: column;
-        padding-top: 20px;
+        padding-top: 10px; /* Reducido de 20px */
     }
 
     .main-title {
         position: relative;
         transform: none;
         left: auto;
-        margin: 20px 0; /* Reducido de 60px 0 20px */
+        margin: 0 0 20px; /* Changed margin */
         font-size: 28px;
         padding: 0 10px;
     }
