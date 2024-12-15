@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         video.innerHTML = `<source src="${newSrc}" type="video/mp4">`;
         video.load();
     }
+	function changeImage('./assets/nueva-imagen.png');
 
     // Ejemplo de uso:
     // toggleMediaType(true); // Mostrar video
