@@ -1,5 +1,5 @@
 // Configura aquí el medio que quieres mostrar
-const mediaToShow = 'png'; // Opciones: 'jpg', 'png', 'video', o 'none'
+const mediaToShow = 'jpg'; // Opciones: 'jpg', 'png', 'video', o 'none'
 
 document.addEventListener('DOMContentLoaded', function() {
     const centralContent = document.querySelector('.central-content');

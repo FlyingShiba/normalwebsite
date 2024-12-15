@@ -2,19 +2,32 @@ body {
     font-family: 'Orbitron', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-image: url('../assets/background19201080.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #ffffff;
 }
 
 header {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     text-align: center;
+    position: relative;
 }
 
 .logo {
     font-size: 18px;
     margin-bottom: 10px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.ca-box {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 2px 5px;
+    margin-right: 5px;
 }
 
 .main-title {
