@@ -41,25 +41,27 @@ main {
 }
 
 .central-content {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    background-image: url('../assets/800600.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 300px; /* Ajusta esto según tus necesidades */
-    background-color: #1a1a1a; /* Un color de fondo oscuro para cuando no hay imagen */
+}
+
+#centralImage, #centralVideo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 800px; /* Ajusta esto según el tamaño máximo que desees para tu imagen */
-}
-
-#centralImage {
-    max-width: 100%;
-    height: auto;
-    display: block; /* Esto asegura que la imagen se comporte como un bloque */
-}
-
-#centralVideo {
-    max-width: 100%;
-    height: auto;
-    display: none; /* El video está oculto por defecto */
+    height: 100%;
 }
 
 @media (max-width: 768px) {
