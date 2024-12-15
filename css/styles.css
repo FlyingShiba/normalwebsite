@@ -126,7 +126,7 @@ main {
         position: relative;
         transform: none;
         left: auto;
-        margin: 60px 0 20px;
+        margin: 20px 0; /* Reducido de 60px 0 20px */
         font-size: 28px;
         padding: 0 10px;
     }
