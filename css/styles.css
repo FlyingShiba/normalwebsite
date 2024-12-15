@@ -20,7 +20,7 @@ header {
     left: 0;
     right: 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
     z-index: 1000;
@@ -34,6 +34,7 @@ header {
     border-radius: 4px;
     color: white;
     text-transform: uppercase;
+    margin-top: 20px;
 }
 
 .main-title {
@@ -42,30 +43,19 @@ header {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 60px;
 }
 
 .social-icons {
     display: flex;
     gap: 20px;
     align-items: center;
+    margin-top: 20px;
 }
 
-.icon-x {
-    width: 44px;
-    height: 44px;
-}
-
-.icon-telegram {
+.icon-x, .icon-telegram, .icon-pump {
     width: 40px;
     height: 40px;
-}
-
-.icon-pump {
-    width: 38px;
-    height: 38px;
 }
 
 .social-icons img {
@@ -96,6 +86,7 @@ main {
     max-width: 800px;
     width: 100%;
     height: auto;
+    margin-top: 120px;
 }
 
 .central-image img {
@@ -106,37 +97,27 @@ main {
 }
 
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        position: static;
-        padding-top: 40px;
-    }
-
     .main-title {
-        position: static;
-        transform: none;
-        margin-bottom: 20px;
-        font-size: 28px;
+        font-size: 24px;
+        margin-top: 40px;
     }
 
     .social-icons {
-        order: 2;
-        margin-bottom: 20px;
-    }
-
-    main {
-        justify-content: flex-start;
-        padding-top: 20px;
+        position: absolute;
+        top: calc(100vh - 180px);
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .central-image {
-        order: 3;
+        margin-top: 80px;
     }
 
     .logo {
-        order: 4;
-        margin-top: 20px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
