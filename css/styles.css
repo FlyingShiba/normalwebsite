@@ -33,6 +33,22 @@ header {
 .main-title {
     font-size: 36px;
     margin-bottom: 20px;
+    animation: titleAnimation 5s infinite alternate;
+}
+
+@keyframes titleAnimation {
+    0% {
+        transform: translateY(0);
+        color: #ffffff;
+    }
+    50% {
+        transform: translateY(-5px);
+        color: #ffcc00;
+    }
+    100% {
+        transform: translateY(0);
+        color: #ff6600;
+    }
 }
 
 .social-icons {
@@ -42,8 +58,13 @@ header {
 }
 
 .icon-x, .icon-telegram, .icon-pump {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-dex, .icon-sol {
+    width: 50px;
+    height: 50px;
 }
 
 main {
@@ -58,7 +79,6 @@ main {
     width: 100%;
     max-width: 800px;
     height: 600px;
-    background-image: url('../assets/800600.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -90,5 +110,9 @@ main {
         width: 25px;
         height: 25px;
     }
-}
 
+    .icon-dex, .icon-sol {
+        width: 35px;
+        height: 35px;
+    }
+}

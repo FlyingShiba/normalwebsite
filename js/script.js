@@ -1,5 +1,5 @@
 // Configura aquí el medio que quieres mostrar
-const mediaToShow = 'jpg'; // Opciones: 'jpg', 'png', 'video', o 'none'
+const mediaToShow = 'jpg'; // Opciones: 'jpg', 'png', 'gif', 'video', o 'none'
 
 document.addEventListener('DOMContentLoaded', function() {
     const centralContent = document.querySelector('.central-content');
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateMedia(type) {
         switch(type) {
             case 'jpg':
-                centralContent.style.backgroundImage = "url('./assets/800600.jpg')";
+                centralContent.style.backgroundImage = "url('./assets/background800x600.jpg')";
                 centralImage.style.display = 'none';
                 centralVideo.style.display = 'none';
                 break;
@@ -17,6 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 centralContent.style.backgroundImage = "none";
                 centralImage.src = './assets/nueva-imagen.png';
                 centralImage.style.display = 'block';
+                centralVideo.style.display = 'none';
+                break;
+            case 'gif':
+                centralContent.style.backgroundImage = "url('./assets/background800x600.gif')";
+                centralImage.style.display = 'none';
                 centralVideo.style.display = 'none';
                 break;
             case 'video':
@@ -36,5 +41,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     updateMedia(mediaToShow);
-});
-
+})
