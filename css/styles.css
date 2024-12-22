@@ -3,12 +3,16 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('../assets/background19201080.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: 919px 900px; /* Tamaño exacto de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center top; /* Centra la imagen horizontalmente y la alinea en la parte superior */
+    background-color: #000000; /* Color de fondo para áreas no cubiertas por la imagen */
     background-attachment: fixed;
     color: #ffffff;
+    min-height: 100vh; /* Asegura que el body cubra toda la altura de la ventana */
 }
 
+/* El resto del CSS permanece igual */
 header {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -116,3 +120,4 @@ main {
         height: 35px;
     }
 }
+
