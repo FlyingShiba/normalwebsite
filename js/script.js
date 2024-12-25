@@ -41,19 +41,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     updateMedia(mediaToShow);
-})
 
-// Audio player functionality
-const audioPlayer = document.getElementById('backgroundMusic');
-const playPauseButton = document.getElementById('playPauseButton');
+    // Audio player functionality
+    const audioPlayer = document.getElementById('backgroundMusic');
+    const playPauseButton = document.getElementById('playPauseButton');
+    const volumeControl = document.getElementById('volumeControl');
 
-playPauseButton.addEventListener('click', () => {
-    if (audioPlayer.paused) {
-        audioPlayer.play();
-        playPauseButton.textContent = 'Pause';
-    } else {
-        audioPlayer.pause();
-        playPauseButton.textContent = 'Play';
-    }
+    playPauseButton.addEventListener('click', () => {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+            playPauseButton.textContent = 'Pause';
+        } else {
+            audioPlayer.pause();
+            playPauseButton.textContent = 'Play';
+        }
+    });
+
+    volumeControl.addEventListener('input', () => {
+        audioPlayer.volume = volumeControl.value;
+    });
 });
-
